@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./favicon.png">
+	<link rel="stylesheet" href="adattoworkmin.css">
+	<link rel="stylesheet" href="style.css">
+	<title>REMEBER NUMBER</title>
+</head>
+<body>
+	<div class="wrapper flex jsc alic flexdc">
+		<header class="header flex jsc alic">
+			<a href="#">Back</a>
+			<div class="name flex jsc alic">
+				<p class="w500">REMEBER NUMBER</p>
+			</div>
+		</header>
+		<div class="rememb jsc alic" id="rempar">
+			<p class="back" onclick="stopRemember();">Back</p>
+			<div class="messpar flex jsc alic flexdc">
+				<p class="inforem" id="infotext">Remember this text</p>
+				<p class="timerem" id="timerview"></p>
+				<p class="random-message" id="randomMessage"></p>
+				<div class="answ flex jsc alic flexdc" id="answ">
+					<div class="obg flex flexdc">
+					<input class="inputsend" id="answer" name="answer" placeholder = "Your answer">
+					</div>
+					<div class="btnpar flex jsc alic"><input type="button" class="button" value="Remember" onclick = "checkAnswer()"></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content flex jsc alic">
+			<div class="crypt-form">
+				<p class="name-form flex jsc alic w500">Remember Number</p>
+				<form class="crypt-form2 flex flexdc" method="post">
+				<div class="obg flex flexdc"><label class="w500" for="length">Length</label>
+					<input class="inputsend" type="number" id="length" name="length">
+				</div>
+				<div class="obg flex flexdc"><label class="w500" for="timer">Timer (s)</label>
+					<input class="inputsend" type="text" id="timer">
+				</div>
+				<div class="check-parrent flex flexdc">
+					<label class="custom-checkbox flex jsc alic">
+  					<input type="checkbox" id="letters">
+  					<span class="checkmark"></span>
+  					Letters
+					</label>
+					<label class="custom-checkbox flex jsc alic">
+  					<input type="checkbox" id="lettersCAPS">
+  					<span class="checkmark"></span>
+  					Letters CAPS
+					</label>
+					<label class="custom-checkbox flex jsc alic">
+  					<input type="checkbox" id="numbers">
+  					<span class="checkmark"></span>
+  					Numbers
+					</label>
+					<label class="custom-checkbox flex jsc alic">
+  					<input type="checkbox" id="special">
+  					<span class="checkmark"></span>
+  					Special characters
+					</label>
+				</div>
+				<div class="btnpar flex jsc alic w500"><input type="button" class="button w500" value="Remember" onclick = "startRemember()"></div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<script src ="script.js"></script>
+</body>
+</html>
