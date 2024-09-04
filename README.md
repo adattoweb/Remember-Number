@@ -1,7 +1,7 @@
 # Remember-Number
 check your visual memory
 
-EN:
+**EN:**
 Greetings! I created this pet project so that anyone who wants to can test their visual memory. 
 You simply choose the length of the text, as well as the time after which it will disappear. 
 You can also choose what this text will consist of, for example, letters or CAPITAL LETTERS, special symbols or numbers. 
