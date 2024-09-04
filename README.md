@@ -1,5 +1,5 @@
-# Remember-Number
-check your visual memory
+### Remember-Number
+**check your visual memory**
 
 **EN:**
 Greetings! I created this pet project so that anyone who wants to can test their visual memory. 
@@ -9,7 +9,7 @@ It should be noted that when I say text, I mean a set of randomized characters.
 After the text disappears, your task is to write the symbols you have remembered. 
 The program will also check to what extent your answer will match the correct answer, and display it in percentage.
 
-UA:
+**UA:**
 Привіт! Цей пет-проєкт я створив для того щоб усі охочі могли перевірити свою зірову пам'ять. 
 Ви просто обираєте довжину текста, а також час через який він зникне. 
 Також може обрати з чого цей текст буде складатися, наприклад з букв або ВЕЛИКИХ БУКВ, спеціальних символів або цифр. 
