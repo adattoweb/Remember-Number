@@ -8,6 +8,7 @@ You can also choose what this text will consist of, for example, letters or CAPI
 It should be noted that when I say text, I mean a set of randomized characters. 
 After the text disappears, your task is to write the symbols you have remembered. 
 The program will also check to what extent your answer will match the correct answer, and display it in percentage.
+Maximum values: Length: 40 characters Timer: 10000 seconds
 
 **UA:**
 Привіт! Цей пет-проєкт я створив для того щоб усі охочі могли перевірити свою зірову пам'ять. 
@@ -16,3 +17,6 @@ The program will also check to what extent your answer will match the correct an
 Треба зазначити що коли я кажу текст, я маю на увазі набір рандомізованих символів. 
 Після того як текст зникне ваша задача написати символи які ви запам'ятали. 
 Програма також перевірить на скільки ваша відповідь буде співпадати з правильною відповідю, та висвічить у відсотках.
+Максимальні значення:
+Довжина: 40 символів
+Таймер: 10000 секунд
