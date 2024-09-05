@@ -34,6 +34,7 @@ body,html{
 }
 .crypt-form{
 	background-color: rgba(255, 255, 255, 0.1);
+	width: 20vw;
 	border-radius: 20px;
 	padding: 30px;
 	border: rgba(255,255,255,0.1) 2px solid;
@@ -83,11 +84,11 @@ label {
 	box-shadow: 0px 0px 10.008px 0px rgba(255,111,0,1);
 }
 .inputsend{
+	display: flex;
 	background-color: rgba(255, 255, 255, 0.15);
 	border: rgba(255,255,255,0.1) 2px solid;
 	font-size: 18px;
 	border-radius: 10px;
-	width: 310px;
 	height: 60px;
 }
 .inputsend::placeholder{
@@ -128,7 +129,15 @@ html{ scroll-behavior: smooth; }
 	border-radius: 0.125rem;
 	background-color: #0D0D11;
 }
+@media screen and (max-width: 1400px){
+		.crypt-form{
+		width: 30vw;
+	}
+}
 @media screen and (max-width: 900px) {
+		.crypt-form{
+		width: 40vw;
+	}
 	.content{
 		flex-direction: column;
 	}
@@ -137,6 +146,9 @@ html{ scroll-behavior: smooth; }
 }
 }
 @media screen and (max-width: 600px) {
+		.crypt-form{
+		width: 55vw;
+	}
 	.name{
 		width: 200px;
 	}
@@ -162,8 +174,8 @@ html{ scroll-behavior: smooth; }
 	}
 }
 @media screen and (max-width: 450px) {
-	.inputsend{
-		width: 190px;
+		.crypt-form{
+		width: 70vw;
 	}
 	.key{
 		width: 140px !important;
@@ -221,11 +233,24 @@ html{ scroll-behavior: smooth; }
 }
 .timerem{
 	position: fixed;
-	top: 150px;
+	top: 20vh;
 	background-color: rgba(255, 255, 255, 0.15);
 	padding: 10px;
 	border-radius: 5px;
 	border-radius: rgba(255, 255, 255, 0.15) 1px solid;
+}
+@media screen and (max-height: 650px){
+	.timerem{
+		top: 10vh !important;
+	}
+	.inforem{
+		display: none;
+	}
+}
+@media screen and (max-height: 350px){
+	.timerem{
+		top: 0vh !important;
+	}
 }
 .rememb{
 	display: none;
@@ -234,9 +259,9 @@ html{ scroll-behavior: smooth; }
 	backdrop-filter: blur(2px);
 	border-radius: 10px;
 	position: fixed;
-	top: 5vh;
+	top: 0px;
 	width: 80vw;
-	height: 90vh;
+	height: 100vh;
 	z-index: 10;
 
 }
