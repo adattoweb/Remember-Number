@@ -281,3 +281,7 @@ html{ scroll-behavior: smooth; }
 .random-message {
 	font-size: 25px
 }
+.error{
+	color: #ff0000;
+	display: none;
+}

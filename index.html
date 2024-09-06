@@ -41,11 +41,15 @@
 				<form class="crypt-form2 flex flexdc" method="post">
 				<div class="obg flex flexdc"><label class="w500" for="length">Length</label>
 					<input class="inputsend" type="number" id="length" name="length">
+					<p class ="error" id="maxlen">Max length is 40!</p>
+					<p class ="error" id="fill">Fill the text field!</p>
 				</div>
 				<div class="obg flex flexdc"><label class="w500" for="timer">Timer (s)</label>
 					<input class="inputsend" type="number" id="timer">
+					<p class ="error" id = "maxval">Max value of timer is 10000!</p>
 				</div>
 				<div class="check-parrent flex flexdc">
+					<p class ="error" id = "oneof">One of the three checkboxes must be completed.</p>
 					<label class="custom-checkbox flex jsc alic">
   					<input type="checkbox" id="letters">
   					<span class="checkmark"></span>

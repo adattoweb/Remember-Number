@@ -39,10 +39,22 @@ function checkAnswer(){
 function startRemember(){
 	if(!timer.value || !lengthmes.value || !letters.checked && !numbers.checked && !special.checked && !lettersCAPS.checked){
 		console.log("You need to the fill the field timer and length or one of the three checkboxes must be completed.");
+		document.getElementById('fill').style.display="block";
+		document.getElementById('oneof').style.display="block";
+		setTimeout(function(){
+		document.getElementById('fill').style.display="none";
+		document.getElementById('oneof').style.display="none";
+		}, 6000)
 		return false;
 	}
 	if(timer.value > 10000 || lengthmes.value > 40){
 		console.log("Max timer value is 10000, max length value is 40")
+		document.getElementById('maxlen').style.display="block";
+		document.getElementById('maxval').style.display="block";
+		setTimeout(function(){
+		document.getElementById('maxlen').style.display="none";
+		document.getElementById('maxval').style.display="none";
+		}, 6000)
 		return false
 	}
 
